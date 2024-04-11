@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 페이지</title>
+    <title>알림 페이지</title>
     <!-- 공통 css -->
-    <link rel="stylesheet" href="../css/common.css">
-    <!-- 메인 css -->
-    <link rel="stylesheet" href="../css/main_page.css">
+    <link rel="stylesheet" href="../css/common.css">                                                                                                        
+    <!-- 서브페이지 css -->
+    <link rel="stylesheet" href="../css/notice_page.css">
     <script src="../js/jquery.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -141,117 +139,40 @@
             </div>
         </div>
         <div class="pan">
-            <div class="sub_pan">
-
-            </div>
+            <div class="sub_pan"></div>
         </div>
     </header>
     <main class="main">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://www.eggdrop.co.kr/upload/main/1696575097.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://www.eggdrop.co.kr/upload/main/1675484391.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://www.eggdrop.co.kr/upload/main/1722474958.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://www.eggdrop.co.kr/upload/main/1696573847.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://www.eggdrop.co.kr/upload/main/1746058611.jpg" alt="">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="menu_pan">
-            <div class="menu_box toast_menu_box">
-                <p>- TOAST -</p>
-                <div class="m_pan toast_menu_pan">
-                    <button class="btn t_btn t_btn_L"></button>
-                    <button class="btn t_btn t_btn_R"></button>
-                </div>
-            </div>
-            <div class="menu_box waffle_menu_box">
-                <p>- WAFFLE -</p>
-                <div class="m_pan waffle_menu_pan">
-                    <button class="btn w_btn w_btn_L"></button>
-                    <button class="btn w_btn w_btn_R"></button>
-                </div>
-            </div>
-            <div class="menu_box drink_menu_box">
-                <p>- DRINK -</p>
-                <div class="m_pan drink_menu_pan">
-                    <button class="btn d_btn d_btn_L"></button>
-                    <button class="btn d_btn d_btn_R"></button>
-                </div>
-            </div>
-        </div>
+        <div class="main_banner"></div>
         <div class="text_area">
-            <div class="text_box">
-                <h1 class="text_box_title">- TOAST & WAFFLE -</h1>
-                <span class="span_box">
-                    <span>지금 바로 즐겨보세요!</span>
-                    <span>한 손에 담긴 든든한 한 끼</span>
-                    <span>BRAND STORY</span>
-                    <span>2024년부터 시작한</span>
-                    <span>대한민국 토스트&와플 NO.1</span>
-                    <span>먹자GO는 다양한 토스트와 와플을</span>
-                    <span>커플, 가족, 친구, 아이와 함께</span>
-                    <span>즐길 수 있는 카페입니다.</span>
-                    <span>먹자GO에서 마음껏 즐겨보세요!</span>
-                </span>
-                <div class="btn_box">
-                    <button><a href="https://snowhswasd.github.io/Portfolio/portfolio1/html/main_page(index).html">메뉴판</a></button>
-                    <button><a href="https://snowhswasd.github.io/Portfolio/portfolio1/html/notice_page(index).html">공지사항</a></button>
-                </div>
+            <div class="character L_character"></div>
+            <div class="character R_character"></div>
+            <div class="center_text">
+                <div class="p"></div>
             </div>
-            <div class="text_area_img1"></div>
-            <div class="text_area_img2"></div>
-        </div>
-        <div class="event_area">
-            <h1>- EVENT -</h1>
-            <div class="event_box">
+            <div class="event_bar top_event">
+                <span>K-토스트</span>
+                <span>#와플NO.1</span>
+                <span>K-와플</span>
+                <span>#디저트 맛집</span>
+                <span>친구야 같이가자~</span>
+                <span>#토스트NO.1</span>
+                <span>#맛있다!</span>
+            </div>
+            <div class="event_bar bot_event">
+                <span>#디저트 맛집</span>
+                <span>K-와플</span>
+                <span>#와플NO.1</span>
+                <span>#토스트NO.1</span>
+                <span>친구야 같이가자~</span>
+                <span>#맛있다!</span>
+                <span>K-토스트</span>
             </div>
         </div>
-        <div class="search_area">
-            <p class="search_title">- CAMPUS -</p>
-            <div class="search_outer">
-                <div class="search_txt">
-                    <span>Since 2024</span>
-                    <span>토스트&와플은 초심을 잃지 않고</span> 
-                    <span>첫 날 판매한 첫 번째 음식을</span>
-                    <span>여전히 기억하고 있습니다.</span>
-                    <span>토스트&와플을</span> 
-                    <span>찾아주시는 분들을 위해서</span>
-                    <span>세상 단 하나뿐인 음식을 드리기 위해</span>
-                    <span>더욱 노력하고 있습니다.</span>
-                </div>
-                <div class="search_box">
-                    <p>캠퍼스 찾기</p>
-                    <div class="search_bar_box">
-                        <input type="text" class="search_bar">
-                        <div class="search_icon"></div>
-                    </div>
-                    <div class="search_btn">
-                        <span>매장 검색하기</span>
-                    </div>
-                    <div class="L_icon char_icon"></div>
-                    <div class="R_icon char_icon"></div>
-                </div>
-            </div>
+        <div class="notice">
+            <h1>- NOTICE -</h1>
+            <div class="notice_content"></div>
         </div>
-        <div class="follow_area">
-            <h1>- FOLLOW US -</h1>
-            <div class="follow_box">
-            </div>
-        </div>            
     </main>
     <footer class="footer">
         <div class="f_info_box">
@@ -262,14 +183,8 @@
             <span>E-mail: snowhswasd@naver.com</span>
         </div>
     </footer>
-    
+    <script src="../js/common.js"></script>
+    <script src="../js/notice_page_event.js"></script>
 </div>
-<script src="../js/common.js"></script>
-<script src="../js/main_page_append.js"></script>
-<script src="../js/main_page_mouseEvent.js"></script>
-<script src="../js/main_page_slide.js"></script>
-<script src="../js/main_page_height.js"></script>
-<script src="../js/main_page_scrollEvent.js"></script>
-<script src="../js/swiper.js"></script>
 </body>
 </html>

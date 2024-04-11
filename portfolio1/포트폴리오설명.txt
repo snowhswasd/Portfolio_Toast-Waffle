@@ -1,4 +1,4 @@
--깃허브 주소:https://snowhswasd.github.io/Portfolio/portfolio1/html/main_page(index).html
+-깃허브 주소: https://snowhswasd.github.io/Portfolio/portfolio1/html/main_page(index).html
 
 -반응형
 
