@@ -631,10 +631,10 @@ main{
     }
     .event_box,
     .search_txt{
-        gap: 5px;
+        gap: 10px;
     }
     .event_outer{
-        width: calc((100% - (5px*1 + 20px*2))/2);
+        width: calc((100% - (10px*1 + 20px*2))/2);
         padding-bottom: 45%;
     }
     .search_bar,
