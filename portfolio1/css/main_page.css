@@ -347,7 +347,9 @@ main{
     width: 100%;
     display: flex;
     gap: 30px;
-    padding: 3% 20px;
+    padding: 3% 0%;
+    box-sizing: border-box;
+    justify-content: center;
     overflow: hidden;
 }
 .event_outer{
@@ -356,7 +358,7 @@ main{
     border-radius: 35% 35% 0 0; 
     padding-bottom: 23%;
     border: 1px solid rgba(0, 0, 0,0.4);    
-    box-sizing: border-box;
+    
     overflow: hidden;
     cursor: pointer;
     left: 150%;
