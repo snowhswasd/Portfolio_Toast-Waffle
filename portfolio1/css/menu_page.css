@@ -103,7 +103,7 @@ li span{
     float: left;
     border-radius: 30px;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
 .opt:hover{
     background-color: rgba(180, 178, 178, 0.1);
