@@ -62,7 +62,7 @@ let toast_arr = [
             <span class="t_title"></span>
         </div>`
 
-        document.getElementsByClassName("t_menu")[i].style.background=`url(../img/toast/${toast_arr[i][0]}) no-repeat center center / cover`
+        document.getElementsByClassName("t_menu")[i].style.background=`url(./img/toast/${toast_arr[i][0]}) no-repeat center center / cover`
 
         document.getElementsByClassName("t_title")[i].innerHTML=`${toast_arr[i][1]}`
     }
@@ -97,7 +97,7 @@ let waffle_arr=[
             <span class="w_title"></span>
         </div>`
 
-        document.getElementsByClassName("w_menu")[i].style.background=`url(../img/waffle/${waffle_arr[i][0]}) no-repeat center center / cover`
+        document.getElementsByClassName("w_menu")[i].style.background=`url(./img/waffle/${waffle_arr[i][0]}) no-repeat center center / cover`
 
         document.getElementsByClassName("w_title")[i].innerHTML=`${waffle_arr[i][1]}`
         
@@ -134,7 +134,7 @@ let drink_arr=[
             <span class="d_title"></span>
         </div>`
 
-        document.getElementsByClassName("d_menu")[i].style.background=`url(../img/drink/${drink_arr[i][0]}) no-repeat center center / cover`
+        document.getElementsByClassName("d_menu")[i].style.background=`url(./img/drink/${drink_arr[i][0]}) no-repeat center center / cover`
 
         document.getElementsByClassName("d_title")[i].innerHTML=`${drink_arr[i][1]}`
         
@@ -155,7 +155,7 @@ $(document).ready(function(){
                     <span class="t_title"></span>
                 </div>`)
             $('.t_menu').eq(i).css({
-                background: `url(../img/toast/${toast_arr[i][0]}) no-repeat center center / cover`
+                background: `url(./img/toast/${toast_arr[i][0]}) no-repeat center center / cover`
             })
             $('.t_title').eq(i).append(
                 `${toast_arr[i][1]}`
@@ -180,7 +180,7 @@ $(document).ready(function(){
                 <span class="w_title"></span>
             </div>`)
             $('.w_menu').eq(i).css({
-                background: `url(../img/waffle/${waffle_arr[i][0]}) no-repeat center center / cover`
+                background: `url(./img/waffle/${waffle_arr[i][0]}) no-repeat center center / cover`
             })
             $('.w_title').eq(i).append(
                 `${waffle_arr[i][1]}`
@@ -204,7 +204,7 @@ $(document).ready(function(){
                 <span class="d_title"></span>
             </div>`)
             $('.d_menu').eq(i).css({
-                background: `url(../img/drink/${drink_arr[i][0]}) no-repeat center center / cover`
+                background: `url(./img/drink/${drink_arr[i][0]}) no-repeat center center / cover`
             })
             $('.d_title').eq(i).append(
                 `${drink_arr[i][1]}`

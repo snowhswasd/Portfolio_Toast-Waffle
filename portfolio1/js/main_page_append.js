@@ -26,7 +26,7 @@ $(document).ready(function(){
         </div>     
         `)
         $('.t_img').eq(i).css({
-            background:`url(../img/toast/${toast_arr[i][0]})no-repeat center center /cover`
+            background:`url(./img/toast/${toast_arr[i][0]})no-repeat center center /cover`
         })
         $('.t_title').eq(i).append(`${toast_arr[i][1]}`)
     }
@@ -64,7 +64,7 @@ $(document).ready(function(){
         </div>     
         `)
         $('.w_img').eq(i).css({
-            background:`url(../img/waffle/${waffle_arr[i][0]})no-repeat center center /cover`
+            background:`url(./img/waffle/${waffle_arr[i][0]})no-repeat center center /cover`
         })
         $('.w_title').eq(i).append(`${waffle_arr[i][1]}`)
     }
@@ -107,7 +107,7 @@ $(document).ready(function(){
         </div>     
         `)
         $('.d_img').eq(i).css({
-            background:`url(../img/drink/${drink_arr[i][0]})no-repeat center center /cover`
+            background:`url(./img/drink/${drink_arr[i][0]})no-repeat center center /cover`
         })
         $('.d_title').eq(i).append(`${drink_arr[i][1]}`)
     }

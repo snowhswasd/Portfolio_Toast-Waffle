@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메뉴판 페이지</title>
-       <!-- 공통 css -->
-       <link rel="stylesheet" href="../css/common.css">
-       <!-- 서브페이지 css -->
-       <link rel="stylesheet" href="../css/menu_page.css">
-       <script src="../js/jquery.js"></script>
+    <title>알림 페이지</title>
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./css/common.css">                                                                                                        
+    <!-- 서브페이지 css -->
+    <link rel="stylesheet" href="./css/notice_page.css">
+    <script src="./js/jquery.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -17,9 +17,9 @@
             <ul class="h_top_ul">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
-                <li><a href="#"><img src="../img/instagram.png" alt="" class="instagram"></a></li>
-                <li><a href="#"><img src="../img/facebook.png" alt="" class="facebook"></a></li>
-                <li><a href="#"><img src="../img/youtube.png" alt="" class="youtube"></a></li>
+                <li><a href="#"><img src="./img/instagram.png" alt="" class="instagram"></a></li>
+                <li><a href="#"><img src="./img/facebook.png" alt="" class="facebook"></a></li>
+                <li><a href="#"><img src="./img/youtube.png" alt="" class="youtube"></a></li>
             </ul>
         </div>
         <div class="h_bot">
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
             </ul>
-            <a href="https://snowhswasd.github.io/Portfolio/portfolio1/html/main_page(index).html">
+            <a href="https://snowhswasd.github.io/Portfolio/portfolio1/main_page(index).html">
                 <div class="logo"></div>
             </a>
             <ul class="nav_ul_R">
@@ -139,41 +139,40 @@
             </div>
         </div>
         <div class="pan">
-            <div class="sub_pan">
-
-            </div>
+            <div class="sub_pan"></div>
         </div>
     </header>
     <main class="main">
         <div class="main_banner"></div>
-        <div class="menu_bar">
-            <div class="menu">
-                <ul class="menu_ul">
-                    <li><span class="toast_btn">토스트</span></li>
-                    <li>
-                        <div class="bar bar_L"></div>
-                        <span class="waffle_btn">와플</span>
-                        <div class="bar bar_R"></div>
-                    </li>
-                    <li><span class="drink_btn">음료수</span></li>
-                </ul>
+        <div class="text_area">
+            <div class="character L_character"></div>
+            <div class="character R_character"></div>
+            <div class="center_text">
+                <div class="p"></div>
+            </div>
+            <div class="event_bar top_event">
+                <span>K-토스트</span>
+                <span>#와플NO.1</span>
+                <span>K-와플</span>
+                <span>#디저트 맛집</span>
+                <span>친구야 같이가자~</span>
+                <span>#토스트NO.1</span>
+                <span>#맛있다!</span>
+            </div>
+            <div class="event_bar bot_event">
+                <span>#디저트 맛집</span>
+                <span>K-와플</span>
+                <span>#와플NO.1</span>
+                <span>#토스트NO.1</span>
+                <span>친구야 같이가자~</span>
+                <span>#맛있다!</span>
+                <span>K-토스트</span>
             </div>
         </div>
-        <div class="menu_pan_box">
-            <div class="menu_pan toast_menu">
-                <p>-토스트-</p>
-                <div class="t_plus_btn plus_btn">더보기</div>
-            </div>
-            <div class="menu_pan waffle_menu">
-                <p>-와플-</p>
-                <div class="w_plus_btn plus_btn">더보기</div>
-            </div>
-            <div class="menu_pan drink_menu">
-                <p>-음료수-</p>
-                <div class="d_plus_btn plus_btn">더보기</div>
-            </div>
+        <div class="notice">
+            <h1>- NOTICE -</h1>
+            <div class="notice_content"></div>
         </div>
-        
     </main>
     <footer class="footer">
         <div class="f_info_box">
@@ -184,8 +183,8 @@
             <span>E-mail: snowhswasd@naver.com</span>
         </div>
     </footer>
+    <script src="./js/common.js"></script>
+    <script src="./js/notice_page_event.js"></script>
 </div>
-<script src="../js/common.js"></script>
-<script src="../js/menu_page.js"></script>
 </body>
 </html>

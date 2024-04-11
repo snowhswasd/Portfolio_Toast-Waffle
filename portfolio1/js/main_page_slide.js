@@ -61,9 +61,6 @@ $(document).ready(function(){
         t_auto_slide();
     })
 
-
-
-       
     
     let waffle_count = $('.waffle_menu').length;
     let waffle_w = $('.waffle_menu').outerWidth();
@@ -83,8 +80,7 @@ $(document).ready(function(){
 
     let w_bang = 0;
     $('.w_btn_L').click(function(){
-        w_btn_init();
-         
+        w_btn_init();         
         $('.waffle_menu').animate({
             left: `-=${waffle_w}`
         }, 500, 'linear') 
@@ -131,71 +127,71 @@ $(document).ready(function(){
     })
 
 
-     
-     let drink_count = $('.drink_menu').length;
-     let drink_w = $('.drink_menu').outerWidth();
-     let d_interval;
- 
-     for(let i=0; i<drink_count; i++) {
-         $('.drink_menu').eq(i).css({left: drink_w * i})
-     }
- 
-     $(window).resize(function(){
-     clearInterval(d_interval)
-     drink_w = $('.drink_menu').outerWidth();
-     for(let i=0; i<drink_count; i++) {
-         $('.drink_menu').eq(( i+ d_bang)%drink_count).css({left: drink_w * i})
-     }
- 
-     });
- 
-     let d_bang = 0;
- 
-     $('.d_btn_L').click(function(){
-         d_btn_init();
-          
-         $('.drink_menu').animate({
-             left: `-=${drink_w}`
-         }, 500, 'linear') 
- 
-         $('.drink_menu').eq(d_bang % drink_count).animate({
-             left: drink_w * (drink_count - 1)
-         }, 0, 'linear')
-         d_bang+=1;
-     })
- 
-     $('.d_btn_R').click(function(){
-         d_btn_init();
-         
-         $('.drink_menu').eq((d_bang - 1) % drink_count).animate({
-             left: -drink_w
-         }, 0, 'linear')
- 
-         
-         $('.drink_menu').animate({
-             left: `+=${drink_w}`
-         }, 500, 'linear') 
-         
-         d_bang-=1;
-     })
- 
-     function d_btn_init() {
-         $('.d_btn').css({pointerEvents: 'none'})
-         setTimeout(function(){
-             $('.d_btn').css({pointerEvents: 'auto'})
-         }, 500)
-     }
- 
-     function d_auto_slide() {
-         d_interval = setInterval(() => {
-             $('.d_btn_R').trigger('click')
-         }, 2000);
-     }
-     d_auto_slide()
- 
-     $('.drink_menu_pan').hover(function(){
-         clearInterval(d_interval)
-     }, function(){
-         d_auto_slide();
-     })
+
+    let drink_count = $('.drink_menu').length;
+    let drink_w = $('.drink_menu').outerWidth();
+    let d_interval;
+
+    for(let i=0; i<drink_count; i++) {
+        $('.drink_menu').eq(i).css({left: drink_w * i})
+    }
+
+    $(window).resize(function(){
+    clearInterval(d_interval)
+    drink_w = $('.drink_menu').outerWidth();
+    for(let i=0; i<drink_count; i++) {
+        $('.drink_menu').eq(( i+ d_bang)%drink_count).css({left: drink_w * i})
+    }
+
+    });
+
+    let d_bang = 0;
+
+    $('.d_btn_L').click(function(){
+        d_btn_init();
+        
+        $('.drink_menu').animate({
+            left: `-=${drink_w}`
+        }, 500, 'linear') 
+
+        $('.drink_menu').eq(d_bang % drink_count).animate({
+            left: drink_w * (drink_count - 1)
+        }, 0, 'linear')
+        d_bang+=1;
+    })
+
+    $('.d_btn_R').click(function(){
+        d_btn_init();
+        
+        $('.drink_menu').eq((d_bang - 1) % drink_count).animate({
+            left: -drink_w
+        }, 0, 'linear')
+
+        
+        $('.drink_menu').animate({
+            left: `+=${drink_w}`
+        }, 500, 'linear') 
+        
+        d_bang-=1;
+    })
+
+    function d_btn_init() {
+        $('.d_btn').css({pointerEvents: 'none'})
+        setTimeout(function(){
+            $('.d_btn').css({pointerEvents: 'auto'})
+        }, 500)
+    }
+
+    function d_auto_slide() {
+        d_interval = setInterval(() => {
+            $('.d_btn_R').trigger('click')
+        }, 2000);
+    }
+    d_auto_slide()
+
+    $('.drink_menu_pan').hover(function(){
+        clearInterval(d_interval)
+    }, function(){
+        d_auto_slide();
+    })
 })
