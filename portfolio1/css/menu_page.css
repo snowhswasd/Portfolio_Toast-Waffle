@@ -111,6 +111,7 @@ li span{
 .opt:hover div{
     transition: 0.3s;
     animation: menu_move 1s linear;
+    transform-origin: bottom center;
 }
 
 @keyframes menu_move {
