@@ -204,7 +204,7 @@
         width: calc((100% - (10px * 3))/ 2);
         overflow: hidden;
     }
-    .f_info_text span{
+    .f_info_box span{
         font-size: 2.2vw;
     }
 }

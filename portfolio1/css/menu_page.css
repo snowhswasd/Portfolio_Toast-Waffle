@@ -303,7 +303,7 @@ li span{
     .opt:nth-child(2n + 2){
         margin-right: 0px;
     }
-    .f_info_text span{
+    .f_info_box span{
         font-size: 2.2vw;
     }
 }

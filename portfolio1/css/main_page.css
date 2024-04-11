@@ -654,9 +654,9 @@ main{
         font-size: 8px;
     }
 
-    .f_info_text span,
+    .f_info_box span,
     .search_btn,
     .search_box p{
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 }
