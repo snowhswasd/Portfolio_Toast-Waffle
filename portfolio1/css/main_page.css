@@ -503,6 +503,7 @@ main{
         height: 100px;
     }
     .m_pan{
+        padding-top: 3%;
         padding-bottom: 50%;
     }
     .btn{
