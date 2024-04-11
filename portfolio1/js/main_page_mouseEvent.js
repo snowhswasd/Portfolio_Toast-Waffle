@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(this).find('.food_pan').css({
             marginTop: "-15%",
             transition: `0.5s`,
-            backgroundColor:"rgba(255, 255, 255 , 0.6)"
+            backgroundColor:"rgba(228, 221, 211, 0.5)"
         })
     })
     $('.food_menu').mouseleave(function(){
