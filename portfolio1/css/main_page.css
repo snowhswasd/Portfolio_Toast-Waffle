@@ -63,6 +63,7 @@ main{
     overflow: hidden;
     padding-bottom: 31%;
     background-color: antiquewhite;
+    border-radius: 20px;
 }
 .food_menu{
     margin-top: 4%;
