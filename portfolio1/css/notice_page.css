@@ -68,7 +68,6 @@
     padding: 1%;
     font-size: 2vw;
     border-radius: 30px;
-    display: flex;
 }
 .event_bar{
     position: absolute;
@@ -78,12 +77,12 @@
 .top_event{
     top: 0%;
     left: 100%;
-    animation: top_move1  12s infinite linear;
+    animation: top_move1 10s infinite linear;
 }
 .bot_event{
     bottom: 0%;
     right: 100%;
-    animation: bot_move1 12s infinite linear;
+    animation: bot_move1 10s infinite linear;
 }
 @keyframes top_move1 {
     0%{left : 100%}
